@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+      font-family: "Lora", serif;
+      
 }
 
 
@@ -36,6 +37,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 1.4em;
+      font-family: "Playfair Display", serif;
 }
 
 nav a:hover {
