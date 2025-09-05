@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +5,13 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Fundo geral */
+
 body {
     background-color: #000;
     color: #fff;
 }
 
-/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -41,7 +40,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Submenu Produtos */
+
 nav li {
     position: relative;
 }
@@ -56,16 +55,11 @@ nav li {
     padding: 10px;
     border: 1px solid #333;
 }
-
-li:hover > .popUp {
-    display: flex;
-}
-
 .popUp li {
     margin: 5px 0;
 }
 
-/* CARROSSEL */
+
 .carrosel {
     display: flex;
     justify-content: center;
@@ -80,7 +74,7 @@ li:hover > .popUp {
     object-fit: contain;
 }
 
-/* CARDS */
+
 .cards {
     padding: 40px;
     background-color: #111;
@@ -145,7 +139,7 @@ li:hover > .popUp {
     color: black;
 }
 
-/* CONTATO */
+
 .entreEmContato {
     padding: 40px;
     background-color: #000;
@@ -195,15 +189,26 @@ form input[type="submit"] {
     float: right;
 }
 
-form input[type="submit"]:hover {
+form input[type="sumit"]:hover {
     background-color: black;
     color: gold;
 }
 
-/* FOOTER */
+
 footer {
     background-color: #111;
     text-align: center;
     padding: 20px;
     color: white;
+}
+
+.btnEnviar{
+    background-color: black;
+    border: solid white  3px;
+    border-radius: 12px;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    left: 270px;
+    color: gold;
 }
