@@ -31,14 +31,14 @@ document.getElementById("voltaCarrosel").addEventListener("click", () => {
 // function popUp pro form
 
 let msgEnviada = document.getElementById("MsgEnviado")
-let btnEnviar = document.getElementById("btnEnviar")
 let form = document.querySelector('form')
-let contador = 0;
 let InputNome = document.getElementById("InputNome")
-let InputSobrenome = document.getElementById("InputSobreanome")
+let InputSobrenome = document.getElementById("InputSobrenome")
 let InputEmail = document.getElementById("InputEmail")
-let InputDescriçao = document.getElementById("InputDescriçao")
+let InputDescricao = document.getElementById("InputDescricao")
 
+let btnEnviar = document.getElementById("btnEnviar")
+let contador = 0;
 
 btnEnviar.addEventListener("click" , (e)=>{
     e.preventDefault();
@@ -47,7 +47,7 @@ btnEnviar.addEventListener("click" , (e)=>{
     InputNome.value = ""
     InputSobrenome.value = ""
     InputEmail.value = ""
-    InputDescriçao.value = ""
+    InputDescricao.value = ""
     
     const idIntervalo = setInterval(() => {
         msgEnviada.style.visibility = "visible"
@@ -55,10 +55,11 @@ btnEnviar.addEventListener("click" , (e)=>{
         
         contador++;
         if (contador === 1) {
+            msgEnviada.style.visibility = "hidden"
             clearInterval(idIntervalo);
         }
-    }, 900);
-    
-    msgEnviada.style.display = "none"
+    }, 1000);
+
     form.style.visibility = "visible"
 })
+
