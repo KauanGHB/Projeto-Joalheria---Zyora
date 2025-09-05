@@ -49,13 +49,14 @@ nav li {
     position: relative;
 }
 
-#popUp {
+#menuPopUp {
     position: absolute;
     top: 100%;
     left: 0;
     background: #111;
     margin-top: 10px;
     display: none;
+   
     flex-direction: column;
     padding: 10px;
     border: 1px solid #333;
