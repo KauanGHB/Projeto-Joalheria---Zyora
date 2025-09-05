@@ -33,11 +33,11 @@ nav ul {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 1.4em;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    border-bottom: solid 1px #ffa500;
 }
 
 
@@ -45,32 +45,55 @@ nav li {
     position: relative;
 }
 
-.popUp {
+#popUp {
     position: absolute;
     top: 100%;
     left: 0;
     background: #111;
+    margin-top: 10px;
     display: none;
     flex-direction: column;
     padding: 10px;
     border: 1px solid #333;
 }
-.popUp li {
-    margin: 5px 0;
+#popUp.ativo{
+  display: block;
 }
-
-
+#popUp li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+#popUp li:hover{
+  border-bottom: solid 1px #ffa500;
+}
+.btnsCarrosel{
+  position: absolute;
+  right: 70px;
+  top: 112px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.avancaCarrosel , .voltaCarrosel{
+  font-size: 2em;
+}
 .carrosel {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 40px;
     border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    margin-bottom: 30px;
 }
 
-.carrosel img {
+.carrosel .carroselImg1 {
+  
     height: 500px;
+    object-fit: contain;
+}
+.carrosel .carroselImg2 {
+    height: 500px;
+    display: none;
     object-fit: contain;
 }
 
@@ -82,10 +105,11 @@ nav li {
     flex-direction: row;
 }
 
-.cards h1 {
+.cards>h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 24px;
+    color:#ffa500;
 }
 
 .card1 {
@@ -132,13 +156,6 @@ nav li {
     display: inline-block;
     cursor: pointer;
 }
-
-.infos-card1 a:hover {
-    background-color: gold;
-    color: black;
-}
-
-
 .entreEmContato {
     padding: 40px;
     background-color: #000;
@@ -170,7 +187,7 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 2px solid orange;
+    border: 2px solid #ffa500;
     border-radius: 5px;
 }
 
@@ -179,8 +196,7 @@ form textarea {
     height: 80px;
 }
 
-form input[type="submit"] {
-    background-color: gold;
+form input {
     color: black;
     border: none;
     padding: 10px 20px;
@@ -189,12 +205,6 @@ form input[type="submit"] {
     font-weight: bold;
     float: right;
 }
-
-form input[type="sumit"]:hover {
-    background-color: black;
-    color: gold;
-}
-
 
 footer {
     background-color: #111;
@@ -205,11 +215,37 @@ footer {
 
 .btnEnviar{
     background-color: black;
-    border: solid white  3px;
-    border-radius: 12px;
-    width: 70px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
     height: 30px;
+    font-size: 1.1em;
     position: relative;
-    left: 270px;
+    left: 140px;
     color: gold;
+}
+.btnComprar{
+    background-color: black;
+    border: solid white  3px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.1em;
+    color: gold;
+}
+.popUpMsgEnviado{
+  display: none;
+
+  background-color: #777;
+  border-radius: 5px;
+  position: absolute;
+  left: 920px;
+  top: 1400px;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.popUpMsgEnviado h1{
+  color: #ffa500;
 }
