@@ -15,12 +15,16 @@ body {
 
 header {
     width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:  0 20px  20px 20px;
     background-color: #000;
+    border-bottom: solid 1px #333;
     position: fixed;
+    z-index: 2;
 }
 
 header img {
@@ -37,7 +41,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 1.4em;
-      font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif;
 }
 
 nav a:hover {
@@ -71,12 +75,24 @@ nav li {
 #popUp li:hover{
   border-bottom: solid 1px #ffa500;
 }
+/* btn de avanca e volta carrosel */
+.btnInfoCarrosel{
+  position: absolute;
+  z-index: 1;
+  left: 980px;
+  top: 270px;
+  width: 100px;
+}
+/* btn para indentificação de img 1 ou 2 do carrosel */
+#btnCarrosel1{
+    color: #ffa500;
+}
 .btnsCarrosel{
   position: absolute;
+  z-index: 1;
   right: 70px;
-  top: 112px;
-  width: 1700px;
-  max-width: 100vw;
+  top: 312px;
+  width: 1950px;
   display: flex;
   justify-content: space-between;
 }
@@ -84,6 +100,7 @@ nav li {
   font-size: 2em;
 }
 .carrosel {
+    height: 620px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -91,7 +108,6 @@ nav li {
     border-top: 1px solid #777;
     margin-bottom: 30px;
 }
-
 .carrosel .carroselImg1 {
   
     height: 500px;
@@ -102,23 +118,29 @@ nav li {
     display: none;
     object-fit: contain;
 }
-
-
+/* estiliza o caontainer cards */
 .cards {
+    width: 100%;
+    height: 600px;
     padding: 40px;
     background-color: #111;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
-
-.cards>h1 {
+#titleBlog {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 24px;
-    color:#ffa500;
+    font-size:2em;
+    position: absolute;
+    width: 98%;
+    top: 680px;
+    /* position: absolute;
+    left: 1070px; */
 }
-
 .card1 {
+    width: 100%;
+    height: 365px;
     background-color: #fff;
     color: #000;
     border-radius: 5px;
@@ -163,28 +185,35 @@ nav li {
     cursor: pointer;
 }
 .entreEmContato {
+    width: 100%;
+    height: 580px;
     padding: 40px;
     background-color: #000;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#titleForm{
+    font-size: 2em;
+    position: absolute;
+    top: 1270px;
 }
 
 form {
     background-color: white;
     color: black;
-    padding: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
-    max-width: 400px;
-    width: 100%;
+    width: 60%;
+    height: 440px;
 }
 
 form label {
     display: block;
     margin-bottom: 15px;
     font-weight: bold;
-}
-form > h1{
-    margin-bottom: 20px;
 }
 
 form input[type="text"],
@@ -211,6 +240,9 @@ form input {
     font-weight: bold;
     float: right;
 }
+#InputDescricao{
+    height: 120px;
+}
 
 footer {
     background-color: #111;
@@ -222,12 +254,13 @@ footer {
 .btnEnviar{
     background-color: black;
     border-radius: 5px;
+    padding: 5px;
     margin-top: 10px;
-    width: 200px;
-    height: 30px;
-    font-size: 1.1em;
+    width: 300px;
+    height: 35px;
+    font-size: 1.4em;
     position: relative;
-    left: 140px;
+    left: 860px;
     color: gold;
 }
 .btnComprar{
@@ -239,14 +272,14 @@ footer {
     font-size: 1.1em;
     color: gold;
 }
-.popUpMsgEnviado{
+.PopUpMsg{
   display: none;
 
-  background-color: #777;
+  background-color: #1d9c0780;
   border-radius: 5px;
   position: absolute;
-  left: 920px;
-  top: 1400px;
+  left: 910px;
+  top: 1320px;
   width: 300px;
   height: 50px;
   padding: 10px;

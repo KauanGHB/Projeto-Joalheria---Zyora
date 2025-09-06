@@ -22,7 +22,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#Blog">Blog</a></li>
                 <li>
-                    <a href="#" id="produtos">Produtos</a>
+                    <a href="#Blog" id="produtos">Produtos</a>
                     <ul id="menuPopUp">
                         <li>Produto1</li>
                         <li>Produto2</li>
@@ -33,26 +33,32 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <span class="btnsCarrosel">
+    <main id="Blog">
+        <aside class="btnsCarrosel">
             <i class="fa-solid fa-arrow-left-long avancaCarrosel" id="voltaCarrosel"></i>
-        <i class="fa-solid fa-arrow-right-long voltaCarrosel"
+                <p class="btnInfoCarrosel">
+                    <i class="fa-regular fa-circle" id="btnCarrosel1"></i>
+                    <i class="fa-regular fa-circle" id="btnCarrosel2"></i>
+                </p>
+            <i class="fa-solid fa-arrow-right-long voltaCarrosel"
         id="avancaCarrosel"></i>
-        </span>
+    </aside>
         <section class="carrosel" id="carrosel">
             <img src="img/projetoZyora.png" class="carroselImg1" id="img1" alt="">
             <img src="img/img.banner2.png" class="carroselImg2" id="img2"  alt="">
         </section>
 
         <section class="cards">
-            <h1 id="Blog">Blog</h1>
+            <h1 id="titleBlog">Blog</h1>
             <section class="card1">
                 <section class="img-card1">
                     <img src="img/Projeto Zyora - produto 1.png" class="ImgProduto1" alt="">
                 </section>
                 <section class="infos-card1">
                     <h1>Anel Gold Circle em Ouro Amarelo 18k com Diamantes</h1>
-                    <p>$8.178,39</p>
+                    <h2>
+                        <strong>$8.178,39</strong>
+                    </h2>
                 </section>
                 <button class="btnComprar">Comprar</button>
             </section>
@@ -62,7 +68,9 @@
                 </section>
                 <section class="infos-card1">
                     <h1>Colar Life Botânica com Banho Ouro Amarelo</h1>
-                    <p>$5.359,00</p>
+                    <h2>
+                        <strong>$5.359,00</strong>
+                    </h2>
                     
                 </section>
                 <button class="btnComprar">Comprar</button>
@@ -73,32 +81,46 @@
                 </section>
                 <section class="infos-card1">
                     <h1>Anel Gold Circle em Ouro Amarelo 18k com Diamantes</h1>
-                    <p>$9.075,39</p>
+                    <h2>
+                        <strong>$9.075,39</strong>
+                </h2>
+                </section>
+                <button class="btnComprar">Comprar</button>
+            </section>
+            <section class="card1">
+                <section class="img-card1">
+                    <img src="img/Pulseira-Ouro-Branco.webp" class="ImgProduto3" alt="">
+                </section>
+                <section class="infos-card1">
+                    <h1>Pulseira Riviera em Ouro Branco 18k com Diamante </h1>
+                    <h2>
+                        <strong>$40.990,00</strong>
+                </h2>
                 </section>
                 <button class="btnComprar">Comprar</button>
             </section>
         </section>
         <section class="entreEmContato">
+            <h1 id="titleForm">Entre em contato</h1>
             <form action="">
-                <h1 id="Forms">Entre em contato</h1>
                 <label for="">Nome
-                    <input type="text" name="" id="InputNome" required>
+                    <input type="text" name="" id="InputNome">
                 </label>
                 <label for="">SobreNome
-                    <input type="text" name="" id="InputSobrenome" required>
+                    <input type="text" name="" id="InputSobrenome">
 
                 <label for="">Email
                     <input type="email" name="" id="InputEmail" required>
                 </label>
                 <label for="">Descrição
-                    <input type="text" name="" id="InputDescricao" required>
+                    <input type="text" name="" id="InputDescricao">
                 </label>
 
                 <button class="btnEnviar" id="btnEnviar">Enviar</button>
             </form>
         </section>
-        <section class="popUpMsgEnviado" id="MsgEnviado">
-            <h1>Mensagem Enviada </h1>
+        <section class="PopUpMsg" id="MsgEnviado">
+            <h1>Enviado com sucesso</h1>
         </section>
     </main>
     <footer>
