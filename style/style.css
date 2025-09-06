@@ -107,7 +107,7 @@ nav li {
     display: none;
     object-fit: contain;
 }
-/* estiliza o caontainer cards */
+/* estiliza o container cards */
 .cards {
     width: 100%;
     height: 600px;
@@ -118,14 +118,13 @@ nav li {
     align-items: center;
 }
 #titleBlog {
+    font-family: "Playfair Display", serif;
     text-align: center;
     margin-bottom: 30px;
     font-size:2em;
     position: absolute;
     width: 98%;
     top: 750px;
-    /* position: absolute;
-    left: 1070px; */
 }
 .card1 {
     width: 100%;
@@ -183,9 +182,10 @@ nav li {
     align-items: center;
 }
 #titleForm{
+    font-family: "Playfair Display", serif;
     font-size: 2em;
     position: absolute;
-    top: 1270px;
+    top: 1370px;
 }
 
 form {
@@ -264,7 +264,7 @@ footer {
   border-radius: 5px;
   position: absolute;
   left: 910px;
-  top: 1320px;
+  top: 1500px;
   width: 300px;
   height: 50px;
   padding: 10px;

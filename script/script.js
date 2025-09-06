@@ -33,7 +33,6 @@ document.getElementById("voltaCarrosel").addEventListener("click", () => {
         mostrando = 1;
     }
 });
-
 // function popUp pro form
 let InputNome = document.getElementById("InputNome")
 let InputSobrenome = document.getElementById("InputSobrenome")
@@ -45,10 +44,8 @@ let btnEnviar = document.getElementById("btnEnviar")
 btnEnviar.addEventListener("click", (e) => {
   e.preventDefault();
     if (
-        InputNome.value == "" ||
-        InputSobrenome.value == "" ||
-        InputEmail.value == "" ||
-        InputDescricao.value == ""
+        InputNome.value == ""||InputSobrenome.value == "" ||
+        InputEmail.value == ""||InputDescricao.value == ""
     ) {
         alert("há campos não preenchidos");
     } else {
@@ -57,7 +54,7 @@ btnEnviar.addEventListener("click", (e) => {
         setTimeout(() => {
             PopUpMsg.style.display = "none";
             form.style.visibility = "visible";
-        }, 800);
+        }, 1000);
         form.reset(); // limpa campos
     }
 });
