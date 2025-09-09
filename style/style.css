@@ -230,6 +230,7 @@ form input {
 }
 
 footer {
+    border-top:solid 1px #333 ;
     background-color: #111;
     text-align: center;
     padding: 20px;
@@ -272,4 +273,41 @@ footer {
 }
 .popUpMsgEnviado h1{
   color: #ffa500;
+}
+.redes-sociais {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.redes-sociais h2 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icone {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(207, 207, 207, 0.336);
+    transition: transform 0.3s;
+}
+.icone:hover {
+    transform: scale(1.1);
+}
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instagram {
+    background-color: #E4405F;
+}
+.whatsapp {
+    background-color: #25D366;
 }
