@@ -18,6 +18,10 @@ O projeto tem como objetivo fornecer uma base responsiva e sofisticada para loja
 - 🧩 **Interações dinâmicas**: menus suspensos e alternância de conteúdo com JavaScript.
 - 🎯 **Foco no frontend**: fácil de personalizar e integrar com backends ou plataformas externas.
 
+link do projeto no figma : 
+
+https://www.figma.com/design/WP2XuDvlR0Wz9BCZhSfgj9/projeto-da-Zyora?node-id=0-1&t=9W5QzgJx9qpW1RNu-1
+
 ---
 
 ## 🛠️ Tecnologias utilizadas
