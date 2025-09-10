@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      font-family: "Lora", serif;
+    font-family: "Lora", serif;
       
+}
+html, body {
+    overflow-x: hidden;
 }
 body {
     background-color: #000;
@@ -68,9 +71,10 @@ nav li {
 .btnInfoCarrosel{
   position: absolute;
   z-index: 1;
-  left: 980px;
+  left: 45%;
   top: 315px;
   width: 100px;
+  margin: auto;
 }
 /* btn para indentificação de img 1 ou 2 do carrosel */
 #btnCarrosel1{
@@ -81,7 +85,7 @@ nav li {
   z-index: 1;
   right: 70px;
   top: 312px;
-  width: 1950px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -98,7 +102,6 @@ nav li {
     border-top: 1px solid #777;
 }
 .carrosel .carroselImg1 {
-  
     height: 500px;
     object-fit: contain;
 }
@@ -246,7 +249,7 @@ footer {
     height: 35px;
     font-size: 1.4em;
     position: relative;
-    left: 860px;
+    left: 755px;
     color: gold;
 }
 .btnComprar{
